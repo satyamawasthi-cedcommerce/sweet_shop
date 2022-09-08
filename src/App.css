@@ -1,38 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* css for Header */
+.HeaderDiv {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+}
+/* css for logo */
+.logo {
+  width: 60%;
+}
+.brandName {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+/* css for Header Content */
+.headerContentDiv {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.headerContentDiv h2 {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+  transition: all 0.8s;
+}
+.headerContentDiv h2:hover {
+  color: #505050;
+  cursor: pointer;
+}
+.ccdDiv {
+  width: 90%;
+  margin: 2% 5%;
+  position: relative;
+}
+.ccdbg {
+  width: 100%;
+}
+
+.ccdImages {
+  position: absolute;
+  width: 90%;
+  margin: auto 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5%;
+  top: 0;
+}
+.ccdImg {
+  width: 30%;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.ccdImg:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.categoriesHeading {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.CategoriesDiv {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.CategoriesDiv div {
+  width: 30%;
+  margin-left: 2.5%;
+}
+.CategoriesDiv div img {
+  transition: all 0.5s ease-in-out;
+}
+.CategoriesDiv div img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.aboutContent {
+  font-family: "Cedarville Cursive", cursive;
+  margin-top: 2%;
+}
+.aboutHead {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+  margin-top: 3%;
+}
+.aboutDiv {
+  background-image: url(https://hirasweets.com/wp-content/uploads/2021/10/New_online_order.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 7%;
+  margin-top: 5%;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+.tDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  line-height: 1.3;
+}
+.tDiv div {
+  width: 30%;
+  margin-top: 2%;
+  border-radius: 10px;
+  padding: 1%;
+}
+.tDiv div img {
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+.tDiv div h3 {
+  margin-top: 2%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  font-weight: 400;
+}
+.tHeading {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.cartList{
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.emptyCarthead{
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.cartContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.cartDiv {
+  width: 50%;
+}
+.removeItem{
+  padding:1%;
+  margin:1%;
+  border:transparent;
+  border:2px solid #aa243d;
+  background-color: white;
+  color:#aa243d;
+  transition: all 0.4s;
+}
+.removeItem:hover{
+  color:white;
+  background-color: #aa243d;
+  cursor:pointer;
+}
+.billHead{
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.billDiv{
+  margin-top: 2.8%;
+  background-color: #f1f3f4;
+}
+.checkoutbtn{
+  background-color: white;
+  color:#aa243d;
+  padding:1%;
+  margin:2%;
+  font-weight: bold;
+  border:transparent;
+  border:2px solid #aa243d;
+  transition: all 0.4s;
+}
+.checkoutbtn:hover{
+  color:white;
+  background-color: #aa243d;
+  cursor:pointer;
+}
+.emptyCartbtn{
+  background-color: white;
+  color:#aa243d;
+  padding:1%;
+  margin:2%;
+  font-weight: bold;
+  border:transparent;
+  border:2px solid #aa243d;
+}
+.emptyCartbtn:hover{
+  color:white;
+  background-color: #aa243d;
+  cursor:pointer;
+}
+.individualCartItem{
+  background-color:#f1f3f4;
+  display: flex;
+  justify-content: space-around;
+  padding:2%;
+  margin:2%;
+}
+.footer_Link {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.contactHead {
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+}
+.contactDiv {
+  background-image: url(https://hirasweets.com/wp-content/uploads/2021/10/New_online_order.jpg);
+  display: flex;
+  width: 60%;
+  margin-left: 17%;
+  border-radius: 10px;
+  margin-top: 3%;
+  justify-content: space-around;
+  padding: 3%;
+}
+.conatctContent {
   color: white;
+  font-family: "Dancing Script", cursive;
+}
+.conatctInput {
+  width: 80%;
+  padding: 2%;
+  border: none;
+  margin-top: 3%;
+  border-radius: 7px;
+}
+.contactBtn {
+  margin-top: 5%;
+  padding: 1.5%;
+  width: 35%;
+  border: none;
+  border-radius: 7px;
+  font-size: medium;
+  font-weight: bold;
+  color: #aa243d;
+}
+.footerDiv {
+  margin-top: 3%;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  width: 80%;
+  padding: 1%;
+  border-radius: 7px;
+  border: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shopDiv {
+  background-color: #f1f3f4;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+  border-radius: 10px;
+  margin-top: 4%;
+  padding: 2% 0%;
+}
+.productsDiv {
+  margin-top: 3%;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #f1f3f4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.individualDiv{
+  background-color: white;
+  width:25%;
+  margin-left: 1%;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+.individualDiv img{
+  border-radius: 10px;
+}
+.productSDetails{
+  margin-top: 4%;
+  color:#aa243d;
+  line-height: 2; 
+}
+.productSDetails button{
+  padding:1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width:70%;
+  border:transparent;
+  border:2px solid #aa243d;
+  color:#aa243d;
+  font-size: medium;
+  font-weight: 900;
+  background-color: white;
+  transition: all 0.4s;
+}
+.productSDetails button:hover{
+  color:white;
+  background-color: #aa243d;
+  cursor:pointer;
+}
+.checkoutPageDiv{
+  display: flex;
+  justify-content: space around;
+  padding: 4%;
+}
+.InfoDiv{
+  background-color: #f1f3f4;
+  width:40%;
+  margin-left: 3%;
+  text-align: center;
+}
+.confirmOrder{
+  background-color: #f1f3f4;
+  width:40%;
+  margin-left: 10%;
+}
+.detailsDiv{
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+  padding:2%;
+}
+.confirmHead{
+  color: #ce4639;
+  font-family: "Dancing Script", cursive;
+  padding:2%;
+  text-align: center;
+}
+.imputmail{
+  padding:1%;
+  margin:2%;
+  border: none;
+  outline:none;
+  width:50%;
+}
+.orderSummary{
+  width:90%;
+  margin-left: 5%;
+  border:1px solid black;
+  margin-bottom: 2%;
+}
+.orderSummary tr,th,td{
+  border: 2px solid black;
+}
+.finalOrderBtn{
+  margin:2%;
+  padding:1%;
+  border:transparent;
+  border:2px solid #aa243d;
+  background-color: white;
+  color:#aa243d;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.finalOrderBtn:hover{
+ color:white;
+ background-color: #aa243d; 
+ cursor:pointer;
+}
+.continueShop{
+  margin:2%;
+  padding:1%;
+  border:transparent;
+  border:2px solid #aa243d;
+  background-color: white;
+  color:#aa243d;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.continueShop:hover{
+  color:white;
+ background-color: #aa243d; 
+ cursor:pointer;
 }
